@@ -1,0 +1,140 @@
+.note__list {
+    padding: 30px 0;
+}
+
+.note__list-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.note__list-title {
+    color: rgb(50, 50, 50);
+    font-family: 'Roboto';
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 28px;
+}
+
+.note__list-btn {
+    border: none;
+    outline: none;
+    border-radius: 16px;
+    padding: 20px;
+    max-width: 120px;
+    width: 100%;
+    box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.3),0px 4px 8px 3px rgba(0, 0, 0, 0.15);
+    background: rgba(103, 80, 164, 0.11),rgb(255, 251, 254);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.note__list-btn:active {
+    transform: scale(.75);
+}
+
+.note__list-btn span {
+    color: rgb(103, 80, 164);
+    font-family: 'Roboto';
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 20px;
+    letter-spacing: 0.1px;
+}
+
+.note__list-items {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: 1;
+    gap: 20px;
+}
+
+.note__list-items.grid {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.note__item {
+    background: rgb(255, 251, 254);
+    padding: 16px;
+    border-radius: 16px;
+    box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15),0px 1px 2px 0px rgba(0, 0, 0, 0.3)
+}
+
+.note__item-title {
+    color: rgb(28, 27, 31);
+    font-family: 'Roboto';
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.1px;
+}
+
+.note__item-date {
+    color: rgb(202, 196, 208);
+    font-family: 'Roboto';
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0.25px;
+}
+
+.note__item-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.note__item-top.column {
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.note__item-descr {
+    color: rgb(73, 69, 79);
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0.25px;
+    margin: 16px 0;
+}
+
+.note__item-btnGroups {
+    display: flex;
+    justify-content: end;
+}
+
+.note__item-btn {
+    background: none;
+    outline: none;
+    border: none;
+    background: transparent;
+    padding: 12px;
+    display: flex;
+    align-items: center;
+    gap: 11px;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.note__item-btn span {
+    color: rgb(103, 80, 164);
+    font-family: 'Roboto';
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 20px;
+    letter-spacing: 0.1px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.del span {
+    color: rgb(207, 27, 27);
+}
+
+.note__item-btn:active {
+    transform: scale(.75);
+}

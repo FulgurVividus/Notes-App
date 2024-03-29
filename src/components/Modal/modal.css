@@ -1,0 +1,111 @@
+.modal__block-title {
+    color: rgb(28, 27, 31);
+    font-family: 'Roboto';
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 32px;
+}
+
+.modal__block-form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 16px;
+    gap: 16px;
+    width: 100%;
+}
+
+.modal__block {
+    max-width: 312px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: rgb(243, 237, 247);
+    padding: 24px 24px 34px 24px;
+    border-radius: 24px;
+}
+
+.modal {
+    background: rgba(0, 0, 0, 0.35);
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    transform: scale(0);
+}
+
+.modal.active {
+    transform: scale(1);
+}
+
+.modal__block-form input {
+    border-radius: 4px 4px 0px 0px;
+    background: rgb(231, 224, 236);
+    border: none;
+    outline: none;
+    padding: 9px 16px;
+    color: rgb(73, 69, 79);
+    font-family: 'Roboto';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    border-bottom: 1px solid rgb(28, 27, 31);
+}
+
+.modal__block-form-btns {
+    display: flex;
+    justify-content: end;
+    gap: 32px;
+    margin-top: 34px;
+}
+
+.modal__block-form-btn {
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.cancel {
+    color: rgb(207, 27, 27);
+    font-family: 'Roboto';
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 0.1px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.add {
+    color: rgb(103, 80, 164);
+    font-family: 'Roboto';
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 0.1px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.modal__block-form span {
+    color: rgb(103, 80, 164);
+    font-family: 'Roboto';
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0.4px;
+    text-align: left;
+    padding: 8px 16px 0;
+}
+
+.modal__block-form-input {
+    display: flex;
+    flex-direction: column;
+    background: rgb(231, 224, 236);
+    border-radius: 4px 4px 0px 0px;
+}
